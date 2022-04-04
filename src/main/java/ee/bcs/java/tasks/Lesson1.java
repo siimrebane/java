@@ -1,11 +1,22 @@
 package ee.bcs.java.tasks;
 
 
-import java.util.Scanner;
-
 // TODO kasuta if/else. Ära kasuta Math librarit
 public class Lesson1 {
     public static void main(String[] args) {
+        excersie0();
+        System.out.println("Miinimum 2, 4 on: " + min(2, 4));
+        System.out.println("Miinimum 5, 3 on: " + min(5, 3));
+    }
+
+    // TODO
+    //  defineeri 3 muutujat a = 1, b = 1, c = 3
+    //  Prindi välja a==b
+    //  Prindi välja a==c
+    //  Lisa rida a = c
+    //  Prindi välja a==b
+    //  Prindi välja a==c, mis muutus???
+    public static void excersie0() {
 
     }
 
@@ -43,7 +54,7 @@ public class Lesson1 {
     // TODO
     //  Tagasta string mille väärtus oleks "\"\\""
     //  Trüki muutuja sisu välja
-    public static String someString(){
+    public static String someString() {
         return "";
     }
 
