@@ -57,3 +57,9 @@ https://www.codewars.com/kata/521c2db8ddc89b9b7a0000c1
 **Java**: https://itempool.com/supax/c/uF81VLoRj8Q  
 **Web**: https://itempool.com/supax/c/YHFTWxccZtD  
 **Web2**: https://itempool.com/supax/c/KyFuBbfQ_Mj  
+
+## Kodutöö
+1) Täiendada changelog-1.0.xml sellega, et lisada account tabelisse juurde tulp locked (tüüpi boolean)
+2) Täiendada repository kihti meetodiga, mis küsib kas vastav konto on lukus või mitte (vaata getAccountBalance meetodit)
+3) Täiendada service kihti nii, et depositMoney, withdrawMoney ja transferMoney annaks vea kui konto on lukus (raha ei liigutatata)
+4) Luua teenus (controller, service, repository) läbi mille saaks ühte konkreetset kontot lukustada või lukust lahti teha
