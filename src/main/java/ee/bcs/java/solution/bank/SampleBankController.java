@@ -32,22 +32,7 @@ public class SampleBankController {
     // http://localhost:8080/sample/bank/depositMoney?accountNumber=EE123&amount=10
     @GetMapping("sample/bank/depositMoney")
     public String depositMoney(String accountNumber, Integer amount){
-        if(amount <= 0){
-            return "Sisestatud summa peab olema suurem kui 0";
-        }
-        String sql2 = "SELECT balance FROM account WHERE account_number = :accountNumber";
-        Map paramMap2 = new HashMap();
-        paramMap2.put("accountNumber", accountNumber);
-        Integer oldBalance = jdbcTemplate.queryForObject(sql2, paramMap2, Integer.class);
-
-        Integer newBalance = oldBalance + amount;
-
-        String sql = "UPDATE account SET balance = :balance WHERE account_number = :accountNumber";
-        Map paramMap = new HashMap();
-        paramMap.put("accountNumber", accountNumber);
-        paramMap.put("balance", newBalance);
-        jdbcTemplate.update(sql, paramMap);
-        return "Raha kontole lisatud";
+        return bankService.depositMoney(accountNumber, amount);
     }
 
     // http://localhost:8080/sample/bank/withdrawMoney?accountNumber=EE123&amount=5

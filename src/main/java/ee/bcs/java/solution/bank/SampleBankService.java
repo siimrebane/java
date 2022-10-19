@@ -12,9 +12,12 @@ public class SampleBankService {
     @Autowired
     private NamedParameterJdbcTemplate jdbcTemplate;
 
+    @Autowired
+    private SampleAccountRepository accountRepository;
+
 
     public void createAccount(String accountNumber) {
-        // TODO
+        accountRepository.f1(accountNumber);
     }
 
     public Integer getAccountBalance(String accountNumber) {
@@ -25,4 +28,13 @@ public class SampleBankService {
         return balance;
     }
 
+    public String depositMoney(String accountNumber, Integer amount) {
+        if(amount <= 0){
+            return "Sisestatud summa peab olema suurem kui 0";
+        }
+        Integer oldBalance = accountRepository.getBalance(accountNumber);
+        Integer newBalance = oldBalance + amount;
+        accountRepository.updateBalance(accountNumber, newBalance);
+        return "Raha kontole lisatud";
+    }
 }
