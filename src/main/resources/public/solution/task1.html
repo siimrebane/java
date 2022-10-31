@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  a: <input id="a">
+  b: <input id="b">
+  <button id="minButton">Min</button>
+  <button id="maxButton">Max</button>
+Vastus: <input id="answer" disabled/>
+</body>
+<script>
+  let minButton = document.getElementById('minButton');
+  let maxButton = document.getElementById('maxButton');
+  let a = document.getElementById("a");
+  let b = document.getElementById("b");
+  let answer = document.getElementById("answer");
+
+  minButton.onclick = function (){
+    if(a.value < b.value){
+      answer.value = a.value;
+    } else {
+      answer.value = b.value;
+    }
+  }
+  maxButton.onclick = function() {
+      if(a.value > b.value){
+          answer.value = a.value;
+      } else {
+          answer.value = b.value;
+      }
+  }
+</script>
+</html>
