@@ -22,13 +22,13 @@
 **Fetch and promise**: https://docs.google.com/presentation/d/1tlsXSEefP1cNHJNCqKr6Y8H6xH5v12G4/edit?usp=sharing&ouid=113984198037355275739&rtpof=true&sd=true  
 **Vue JS**: https://docs.google.com/presentation/d/18vi_5EqMK3e7N9UR1Y9u3eZ7W1Te0bvC/edit?usp=sharing&ouid=113984198037355275739&rtpof=true&sd=true
 ### Lisad
-**Security**:  
+**Security**: https://docs.google.com/presentation/d/13bsunVacy5j1ymkq9nNFFvNkUlnB16fC/edit#slide=id.p15  
 **Testing**:  
 **Hibernate, Spring Data**:  
 **Email**:
 **Deploy**:
 
-## Lisaülesanded (väiksem number = raskem ülesanne)
+## Kodune ülesanne 1 (väiksem number = raskem ülesanne)
 ### Raskus 8
 https://www.codewars.com/kata/557cd6882bfa3c8a9f0000c1  
 https://www.codewars.com/kata/57d814e4950d8489720008db  
